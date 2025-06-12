@@ -3,14 +3,13 @@
   margin: 0;
   font-size: clamp(16px, 4vw, 24px);
   font-family:"Roboto", sans-serif;
-  color: whitesmoke;
+  color: #f0f6fc;
 }
 html, body{
   overflow-x: hidden;
 }
 body{
-  background-color:#1e1e1e;
-  /* background-color: #031e1d; */
+  background-color: #010409;
 }
 header{
   width: 100%;
@@ -18,24 +17,28 @@ header{
 }
 nav{
   width: 100%;
-  padding: 1vw;
-  background-color: white;
+  height: auto;
+  background-color: #238636;
   position: fixed;
   bottom: 0;
   left: 0;
   display: none;
+  border: 0.1rem solid #3d444db3;
 } 
 nav ul{
-  margin: auto;
+  margin: 0px auto;
   display: flex;
 }
 nav ul li{
   margin: auto;
   list-style: none;
-  line-height: 10vw;
+  line-height: 11vw;
   text-transform: capitalize;
   letter-spacing: 0.1em;
-  color:black;
+  padding: 0px 3vw;
+  &:hover{
+    background-color: #0d1117;
+  }
 }
 main{
   width: 100%;
@@ -64,25 +67,25 @@ h1{
 }
 .imgColor p{
   text-decoration: none;
-  color: whitesmoke;
   text-transform: capitalize;
 }
 a{
   top:48%;
   right: 3%;
   transform: translate(-50%, -50%);
-  border: 0.1rem solid white;
   margin-top:2vw;
   padding: 1vw;
   text-decoration: none;
-  color: black;
-  background-color: white;
+  background-color: #238636;
   position: absolute;
 
 }
 .textBox{
-  width: 99%;
-  height: 30vh;
+  width: 95%;
+  height: 50vh;
+  border: 0.1rem solid #3d444db3;
+  margin: auto;
+  padding: 2rem 0px;
   overflow-y: auto;
 }
 main > h1{
@@ -91,7 +94,7 @@ main > h1{
   letter-spacing: 0.3rem;
 }
 .textBox p{
-  /* text-align: center; */
+  text-align: center;
   font-weight: 250;
 }
 .packet{
@@ -102,8 +105,7 @@ main > h1{
   align-items: center;
   justify-content: center;
   margin:2vw auto;
-  border-radius: clamp(5px, 2vw, 15px);
-  box-shadow: 0.2rem 0.3rem 0.4rem rgb(83, 82, 82);
+  border: 0.1rem solid #3d444db3;
   cursor:pointer;
 }
 #bg1{
@@ -134,12 +136,14 @@ main > h1{
 .packet h2{
   text-transform: capitalize;
   padding: 2vw;
+  color: #4493f8;
 }
 .packet > .box > p{
   border-radius: 0.5rem;
   padding: 3vw;
   margin: auto;
-  box-shadow: 0.1rem 0.1rem 0.4rem rgb(101, 99, 99);
+  border: 0.1rem solid #3d444db3;
+  /* box-shadow: 0.1rem 0.1rem 0.4rem rgb(101, 99, 99); */
   font-weight: 500;
   text-transform: capitalize;
 }
@@ -150,11 +154,42 @@ footer{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top-left-radius:1rem;
-  border-top-right-radius: 1rem;
-  color: whitesmoke;
-  background-color: #031e1d;
+  /* background-color: #031e1d; */
+  background-color: #0d1117;
 }
 footer+nav{
   display:block;
+}
+.projectContainer{
+  width: 95%;
+  height: fit-content;
+  max-height:70vh;
+  overflow-y: auto;
+  border: 0.1rem solid #3d444db3;
+  margin: auto;
+  padding: 1rem 0px;
+}
+.projectBox{
+  width: 100%;
+  height:auto;
+  display: flex;
+  justify-content: center;
+
+  margin: 1rem 0px;
+}
+.project{
+  width: fit-content;
+  max-width: 35%;
+  height: fit-content;
+  max-height: 15vh;
+  border-radius: 5px;
+  padding: 3vh 15px;
+  text-align: center;
+  background-color: #0d1117;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin: 0px 5px;
+  &:hover{
+    background-color: #238636;
+  }
 }
