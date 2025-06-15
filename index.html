@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,6 +10,8 @@
   <title>Portfolio</title>
 </head>
 <body>
+
+  <!--this is header section-->
   <header>
     <nav>
       <ul>
@@ -21,13 +23,20 @@
       </ul>
     </nav>
   </header>
-  <main>
+
+  <!--this is main section-->
+  <main id="main">
+    <!--this is top landing page section-->
     <div class="img">
       <div class="imgColor">
         <a href="#projects">view my projects</a>
       </div>
     </div>
-    <h1>about</h1>
+
+    <marquee  behavior="alternate" direction="right" scrollamount="5" loop="infinite"><p style="text-transform: capitalize; color: #238636;">welcome to my portfolio website</p></marquee>
+
+    <!--this is about section-->
+    <h1 id="about">about</h1>
     <br>
     <div class="textBox">
       <p>
@@ -38,12 +47,20 @@
         What truly drives me is the belief that success isn't defined by where you start, but by how far you're willing to go. I’m constantly learning, building, and pushing my boundaries, aiming not just to succeed, but to create meaningful impact through technology.
       </p>
     </div>
+
     <br>
     <br>
-    <h1>Skill</h1>
+
+    <!--this is skill section-->
+    <h1 id="skill">Skill</h1>
+
     <br>
+
     <div class="packet" id="bg1">
       <h2>technical skills</h2>
+      <br>
+      <br>
+      <br>
       <div class="box">
         <p>C</p>
         <p>C++</p>
@@ -52,9 +69,14 @@
         <p>CSS</p>
       </div>
     </div>
+
     <br>
+
     <div class="packet" id="bg2">
       <h2>soft skill</h2>
+      <br>
+      <br>
+      <br>
       <div class="box">
         <p>communication</p>
         <p>adaptibility</p>
@@ -64,9 +86,14 @@
         <p>leadership</p>
       </div>
     </div>
+
     <br>
+
     <div class="packet" id="bg3">
       <h2>tools and technology</h2>
+      <br>
+      <br>
+      <br>
       <div class="box">
         <p>visual studio code</p>
         <p>git & gitHub</p>
@@ -76,11 +103,15 @@
         <p>chatGpt & self-Intiative</p>
       </div>
     </div>
+
     <br>
     <br>
+
+    <!--this is projects section-->
     <h1 id="projects">projects</h1>
     <br>
     <div class="projectContainer">
+
       <div class="projectBox">
         <div class="project">bank management system in c++ programming</div>
         <div class="project">quantum hostel leave pass</div>
@@ -90,32 +121,71 @@
         <div class="project">Portfolioo</div>
         <div class="project">another portfolio inspired by github layout</div>
       </div>
+
       <div class="projectBox">
         <div class="project">sharmila kumari</div>
         <div class="project">shyamsundar kumar kushwaha koiri</div>
       </div>
+
       <div class="projectBox">
         <div class="project">Mina Devi</div>
         <div class="project">lalbabu prasad kushwaha koiri</div>
       </div>
+
       <div class="projectBox">
         <div class="project">ramsundar kumar kushwaha koiri</div>
         <div class="project">shree jagdishwar, shree vagwan, jagat pita jagat janani everything including nothing</div>
       </div>
 
     </div>
+
+    <br>
+    <br>
+
+    <!--this is contact section-->
+    <h1 id="contact">contact</h1>
+    <br>
+    <div class="contact">
+      <form id ="contactForm" method="post" id="contact">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required pattern ="^[A-Za-z\s] {2, 50}$" placeholder="full name">
+        <br>
+        <label for="phone">Mobile Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="+91 9876543210" required pattern="^\+91\s?[6-9]\d{9}$">
+        <br>
+        <label for="name">Email</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+        <br>
+        <textarea name="message" id="message" row="5" cols="33" placeholder="message here..." required></textarea>
+
+
+        <br>
+        <div class="buttonBox">
+          <button type="submit">submit</button>
+          <button type="reset">reset</button>
+        </div>
+      </form>
+    </div>
+
   </main>
   <br>
+
+  <!--this is footer section-->
   <footer>
     ramsundar
   </footer>
+
+  <!--this is bottom fixed nav bar-->
   <nav>
     <ul>
-      <li>Home</li>
-      <li>about</li>
-      <li>projects</li>
-      <li>contact</li>
+      <li onclick="scrollToSection('main')">Home</li>
+      <li onclick="scrollToSection('about')">about</li>
+      <li onclick="scrollToSection('projects')">projects</li>
+      <li onclick="scrollToSection('contact')">contact</li>
     </ul>
   </nav>
+
+  <script src="Script.js"></script>
+
 </body>
 </html>

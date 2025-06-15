@@ -40,6 +40,7 @@ nav ul li{
     background-color: #0d1117;
   }
 }
+
 main{
   width: 100%;
   height: auto;
@@ -70,7 +71,7 @@ h1{
   text-transform: capitalize;
 }
 a{
-  top:48%;
+  top:52%;
   right: 3%;
   transform: translate(-50%, -50%);
   margin-top:2vw;
@@ -99,7 +100,7 @@ main > h1{
 }
 .packet{
   width: 95%;
-  height: 23vh;
+  min-height: 24vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,10 +108,13 @@ main > h1{
   margin:2vw auto;
   border: 0.1rem solid #3d444db3;
   cursor:pointer;
+  background-repeat:repeat-y ;
+  background-color: #0d1117;
+  padding: 2rem 0px;
 }
-#bg1{
+/* #bg1{
   background-image: url(images/bg1.png);
-  background-position: center;
+  background-position: center; 
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -125,7 +129,7 @@ main > h1{
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 .box{
   width: 100%;
   height: 100%;
@@ -154,8 +158,10 @@ footer{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: #031e1d; */
-  background-color: #0d1117;
+  background-image: url(images/bg2.png);
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 footer+nav{
   display:block;
@@ -191,5 +197,66 @@ footer+nav{
   margin: 0px 5px;
   &:hover{
     background-color: #238636;
+  }
+}
+.contact{
+  width: 95%;
+  height: auto;
+  border: 0.1rem solid #3d444db3;
+  margin: auto;
+  padding: 2rem 0px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+label{
+  display: block;
+  width: 95%;
+  margin: auto;
+  padding: 0.3rem 0px;
+}
+input{
+  display: block;
+  width: 95%;
+  height: 10vw;
+  background-color: #0d1117;
+  border-style:none;
+  border-radius: 0.5rem;
+  margin: auto;
+  color: #238636;
+  &:focus{
+    outline:none;
+    border: none;
+  }
+}
+textarea{
+  display: block;
+  height: 15vh;
+  width: 95%;
+  border-style:none;
+  border-radius: 0.5rem;
+  background-color: #0d1117;
+  &:focus{
+    outline: none;
+    border: none;
+  }
+}
+.buttonBox{
+  width: 100%;
+  display: flex;
+}
+button{
+  width: fit-content;
+  padding: 0.3rem 1rem;
+  background-color: #238636;
+  text-align: center;
+  border: none;
+  margin: auto;
+  &:focus{
+    border: none;
+    outline: none;
+    background-color: #186328;
   }
 }
