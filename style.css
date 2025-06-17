@@ -3,7 +3,7 @@
   margin: 0;
   font-size: clamp(16px, 4vw, 24px);
   font-family:"Roboto", sans-serif;
-  color: #f0f6fc;
+  /* color: #f0f6fc; */
   text-transform: capitalize;
 }
 html, body{
@@ -37,6 +37,7 @@ nav ul li{
   text-transform: capitalize;
   letter-spacing: 0.1em;
   padding: 0px 3vw;
+  color: #f0f6fc;
   &:hover{
     background-color: #0d1117;
   }
@@ -45,6 +46,7 @@ nav ul li{
 main{
   width: 100%;
   height: auto;
+  color: #f0f6fc;
 }
 .img{
   width: 100%;
