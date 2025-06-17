@@ -271,6 +271,6 @@ button{
   font-size: smaller;
 }
 
-footer+br+br+br+nav{
+footer+nav{
   display:block;
 }
