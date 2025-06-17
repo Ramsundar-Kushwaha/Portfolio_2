@@ -242,7 +242,7 @@ button{
   align-items: center;
   background-color: #0d1117;
 }
-.primaryFooter+nav{
+footer+nav{
   display:block;
 }
 .iconBox {
