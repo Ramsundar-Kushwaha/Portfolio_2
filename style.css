@@ -70,7 +70,7 @@ h1{
   text-decoration: none;
   text-transform: capitalize;
 }
-a{
+.imgColor a{
   top:52%;
   right: 3%;
   transform: translate(-50%, -50%);
@@ -240,9 +240,8 @@ footer+nav{
 .iconBox {
   width: 100%;
   height: auto;
-  background-color: white;
+  /* background-color: white; */
   display: flex;
-  position: relative;
   padding: 0.5rem 0px;
 }
 
