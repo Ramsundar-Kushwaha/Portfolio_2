@@ -242,10 +242,7 @@ button{
   align-items: center;
   background-color: #0d1117;
 }
-footer+nav{
-  display:block;
-}
-.iconBox {
+.primaryFooter > .iconBox {
   width: 100%;
   height: auto;
   /* background-color: white; */
@@ -263,13 +260,17 @@ footer+nav{
   height: 8vw;
 }
 
-.lastFooter{
+.secondaryFooter{
   width: 100%;
   height: auto;
   padding: 0.5rem 0px;
 }
-.lastFooter p{
+.secondaryFooter p{
   text-align: center;
   color: #3d444db3;
   font-size: smaller;
+}
+
+.secondaryFooter+br+br+br+nav{
+  display:block;
 }
