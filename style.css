@@ -56,6 +56,7 @@ main{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-bottom: 0.5rem solid #238636;
   display: flex;
   align-content: center;
   position: relative;
@@ -77,6 +78,7 @@ main{
 
 .titleBox > h1{
   font-size: 25px;
+  color: gold;
 }
 
 .textButtonCollection a{
@@ -90,7 +92,7 @@ main{
 .textBox{
   width: 95%;
   height: 50vh;
-  border: 0.1rem solid #3d444db3;
+  /* border: 0.1rem solid #3d444db3; */
   margin: auto;
   padding: 2rem 0px;
   overflow-y: auto;
@@ -102,7 +104,7 @@ main > h1{
 }
 .textBox p{
   text-align: center;
-  font-weight: 250;
+  font-weight: 400;
 }
 .skillBox{
   width: 95%;
@@ -155,7 +157,7 @@ main > h1{
 }
 .project{
   width: 85%;
-  height: 15vh;
+  height: 23vh;
   border-radius: 5px;
   padding: 3vh 15px;
   text-align: center;
@@ -166,9 +168,39 @@ main > h1{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   &:hover{
     background-color: #238636;
   }
+}
+.project > .explore{
+  width: fit-content;
+  height: fit-content;
+  padding: 0.3rem 0.8rem;
+  text-align: center;
+  border: 1px solid #f0f6fc;
+  margin-top:1rem ;
+}
+.project > .explore > a{
+  text-decoration: none;
+  color: #f0f6fc;
+  cursor: pointer;
+}
+.project >:first-child{
+  color: gold;
+  padding: 0.3rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.tools{
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  padding: 0.3rem;
+  text-transform: uppercase;
+}
+.project > .tools > strong{
+  text-transform: capitalize;
 }
 .contact{
   width: 95%;
@@ -196,7 +228,7 @@ input{
   border-style:none;
   border-radius: 0.5rem;
   margin: auto;
-  color: #238636;
+  color: gold;
   &:focus{
     outline:none;
     border: none;
@@ -212,7 +244,7 @@ textarea{
   border-style:none;
   border-radius: 0.5rem;
   background-color: #0d1117;
-  color: #238636;
+  color: gold;
   text-transform: lowercase;
   &:focus{
     outline: none;

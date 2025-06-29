@@ -121,16 +121,36 @@
     <div class="projectContainer">
 
       <div class="projectBox">
-        <div class="project">Project 1</div>
-        <div class="project">Project 2</div>
+        <div class="project">
+          <p>tic-tac-toe</p>
+          <p>console application</p>
+          <p class="tools"><strong>tools / language used</strong></p>
+          <p>c</p>
+          <div class="explore"><a href="">explore →</a></div>
+        </div>
+        <div class="project">
+          <p>Bank management system</p>
+          <p>console application</p>
+          <p class="tools"><strong>Tools / language used</strong></p>
+          <p>c++</p>
+          <div class="explore"><a href="https://github.com/Ramsundar-Kushwaha/C_Plus_Plus-Projects/tree/main">explore →</a></div>
+        </div>
       </div>
 
       <div class="projectBox">
-        <div class="project">Project 3</div>
-        <div class="project">Project 4</div>
+        <div class="project">
+          <p>portfolio</p>
+          <p>dynamic website</p>
+          <p class="tools"><strong>tools / language used</strong></p>
+          <p>html, css, javascript and & emailjs</p>
+          <div class="explore"><a href="https://github.com/Ramsundar-Kushwaha/Portfolio_2">explore →</a></div>
+        </div>
+        <div class="project">
+          <p>comming soon...</p>
+        </div>
       </div>
 
-      <div class="projectBox">
+      <!-- <div class="projectBox">
         <div class="project">Project 5</div>
         <div class="project">Project 6</div>
       </div>
@@ -143,7 +163,7 @@
       <div class="projectBox">
         <div class="project">Project 9</div>
         <div class="project">Project 10</div>
-      </div>
+      </div> -->
 
     </div>
 
@@ -161,7 +181,7 @@
         <label for="phone">Mobile Number</label>
         <input type="tel" id="phone" name="phone" placeholder="+91 9876543210" required pattern="^\+91\s?[6-9]\d{9}$">
         <br>
-        <label for="name">Email</label>
+        <label for="email">Email</label>
         <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
         <br>
         <textarea name="message" id="message" row="5" cols="33" placeholder="message here..." required></textarea>
@@ -180,13 +200,13 @@
   <!--this is footer section-->
   <footer class="primaryFooter">
     <div class="iconBox">
-      <a href="https://github.com/Ramsundar-Kushwaha" target="_blank"><img src="icons/github.png" alt="github"></a>
+      <a href="https://github.com/Ramsundar-Kushwaha" target="_blank"><img src="icons/github.png" alt="github" title="github"></a>
 
-      <a href="https://www.linkedin.com/in/ramsundar-kushwaha-052b65330/" target="_blank"><img src="icons/linkedin.png" alt="linkedin"></a>
+      <a href="https://www.linkedin.com/in/ramsundar-kushwaha-052b65330/" target="_blank"><img src="icons/linkedin.png" alt="linkedin" title="linkedin"></a>
 
-      <a href="https://wa.me/918279753801" target="_blank"><img src="icons/whatsapp.png" alt="whatsapp"></a>
+      <a href="https://www.facebook.com/profile.php?id=61564827992056" target="_blank"><img src="icons/facebook.png" alt="facebook" title="facebook"></a>
 
-      <a href="https://mail.google.com/mail/u/0/#inbox"><img src="icons/gmail.png" alt="gmail" target="_blank"></a>
+      <a href="https://leetcode.com/u/Ramsundr_2001/"><img src="icons/code.png" alt="leetcode" target="_blank" title="leetcode"></a>
     </div>
     <div class="secondaryFooter">
       <p>&copy; 2025 Ramsundar. All rights reserved. | Portfolio Website</p>
@@ -202,7 +222,8 @@
     </ul>
   </nav>
 
-  <script src="Script.js"></script>
-
+  <!-- Load EmailJS SDK -->
+<script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="Script.js"></script>
 </body>
 </html>
