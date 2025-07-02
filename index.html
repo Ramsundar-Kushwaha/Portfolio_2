@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-universal.css">
+  <link rel="stylesheet" href="style-mobile.css">
+  <link rel="stylesheet" href="style-tab.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -14,14 +16,13 @@
   <!--this is header section-->
   <header>
     <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Skill</li>
-        <li>Projec</li>
-        <li>contact</li>
-      </ul>
-    </nav>
+    <ul>
+      <li onclick="scrollToSection('main')">Home</li>
+      <li onclick="scrollToSection('about')">about</li>
+      <li onclick="scrollToSection('projects')">projects</li>
+      <li onclick="scrollToSection('contact')">contact</li>
+    </ul>
+  </nav>
   </header>
 
   <!--this is main section-->
@@ -40,6 +41,63 @@
 
     <!-- <marquee  behavior="alternate" direction="right" scrollamount="5" loop="infinite"><p style="text-transform: capitalize; color: #238636;">welcome to my portfolio website</p></marquee> -->
 
+    <!--this is skill section-->
+    <div class="skillBoxContainer">
+      <br><br>
+      <h1 id="skill">Skills</h1>
+      <br>
+      <div class="skillContainer">
+
+        <div class="skillBox" id="bg1">
+          <h2>technical skills</h2>
+          <br>
+          <div class="box">
+            <p>C</p>
+            <p>C++</p>
+            <p>Html</p>
+          </div>
+          <div class="box">
+            <p>CSS</p>
+            <p>JavaScript</p>
+          </div>
+        </div>
+        <br>
+        <div class="skillBox" id="bg2">
+          <h2>soft skill</h2>
+          <br>
+          <div class="box">
+            <p>communication</p>
+            <p>teamwork</p>
+          </div>
+          <div class="box">
+            <p>adaptibility</p>
+            <p>leadership</p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="skillContainer">
+        <div class="skillBox" id="bg3">
+          <h2>tools and technology</h2>
+          <br>
+          <div class="box">
+            <p>visual studio code</p>
+            <p>git & gitHub</p>
+          </div>
+          <div class="box">
+            <p>figma</p>
+            <p>chatGpt & self-Intiative</p>
+          </div>
+        </div>
+        <div id="filler">
+          <h2>skills loading...</h2>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
     <!--this is about section-->
     <h1 id="about">about</h1>
     <br>
@@ -56,70 +114,11 @@
     <br>
     <br>
 
-    <!--this is skill section-->
-    <h1 id="skill">Skill</h1>
-
-    <br>
-
-    <div class="skillBox" id="bg1">
-      <h2>technical skills</h2>
-      <br>
-      <br>
-      <br>
-      <div class="box">
-        <p>C</p>
-        <p>C++</p>
-        <p>Html</p>
-      </div>
-      <div class="box">
-        <p>CSS</p>
-        <p>JavaScript</p>
-
-      </div>
-    </div>
-
-    <br>
-
-    <div class="skillBox" id="bg2">
-      <h2>soft skill</h2>
-      <br>
-      <br>
-      <br>
-      <div class="box">
-        <p>communication</p>
-        <p>teamwork</p>
-      </div>
-      <div class="box">
-        <p>adaptibility</p>
-        <p>leadership</p>
-      </div>
-    </div>
-
-    <br>
-
-    <div class="skillBox" id="bg3">
-      <h2>tools and technology</h2>
-      <br>
-      <br>
-      <br>
-      <div class="box">
-        <p>visual studio code</p>
-        <p>git & gitHub</p>
-      </div>
-      <div class="box">
-        <p>figma</p>
-        <p>chatGpt & self-Intiative</p>
-      </div>
-    </div>
-
-    <br>
-    <br>
 
     <!--this is projects section-->
     <h1 id="projects">projects</h1>
     <br>
     <div class="projectContainer">
-
       <div class="projectBox">
         <div class="project">
           <p>tic-tac-toe</p>
@@ -136,7 +135,6 @@
           <div class="explore"><a href="https://github.com/Ramsundar-Kushwaha/C_Plus_Plus-Projects/tree/main">explore →</a></div>
         </div>
       </div>
-
       <div class="projectBox">
         <div class="project">
           <p>portfolio</p>
@@ -145,26 +143,10 @@
           <p>html, css, javascript and & emailjs</p>
           <div class="explore"><a href="https://github.com/Ramsundar-Kushwaha/Portfolio_2">explore →</a></div>
         </div>
-        <div class="project">
+        <div id="commingSoonProject">
           <p>comming soon...</p>
         </div>
       </div>
-
-      <!-- <div class="projectBox">
-        <div class="project">Project 5</div>
-        <div class="project">Project 6</div>
-      </div>
-
-      <div class="projectBox">
-        <div class="project">Project 7</div>
-        <div class="project">Project 8</div>
-      </div>
-
-      <div class="projectBox">
-        <div class="project">Project 9</div>
-        <div class="project">Project 10</div>
-      </div> -->
-
     </div>
 
     <br>

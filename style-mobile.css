@@ -1,0 +1,342 @@
+/*css for mobile*/
+@media(min-width:300px) and (max-width:650px){
+
+  header{
+    width: 100%;
+    height: auto;
+  }
+  nav{
+    width: 100%;
+    height: auto;
+    background-color: #238636;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: none;
+    border: 0.1rem solid #3d444db3;
+  } 
+  nav ul{
+    margin: 0px auto;
+    display: flex;
+  }
+  nav ul li{
+    margin: auto;
+    list-style: none;
+    line-height: 11vw;
+    text-transform: capitalize;
+    letter-spacing: 0.1em;
+    padding: 0px 3vw;
+    color: #f0f6fc;
+    &:hover{
+      background-color: #0d1117;
+    }
+  }
+  
+  main{
+    width: 100%;
+    height: auto;
+    color: #f0f6fc;
+  }
+  .img{
+    width: 100%;
+    height: 30vh;
+    margin:auto;
+    background-image: url(images/bg2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 0.5rem solid #238636;
+    display: flex;
+    align-content: center;
+    position: relative;
+  }
+  .textButtonCollection{
+    position: absolute;
+    width: 90vw;
+    height: fit-content;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .titleBox{
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem;
+  }
+  
+  .titleBox > h1{
+    font-size: 25px;
+    color: gold;
+  }
+  
+  .textButtonCollection a{
+    width: fit-content;
+    padding: 1vw;
+    margin: 0px 14px;
+    text-decoration: none;
+    background-color: #238636;
+  
+  }
+  .textBox{
+    width: 95%;
+    height: 50vh;
+    background:linear-gradient(to bottom, #0d1117, rgb(0, 0, 0));
+    margin: auto;
+    padding: 2rem 0px;
+    overflow-y: auto;
+  }
+  main > h1{
+    text-align: center;
+    padding: 2vh;
+    letter-spacing: 0.3rem;
+  }
+  .textBox p{
+    text-align: center;
+    font-weight: 300;
+  }
+  .skillBoxContainer{
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .skillContainer{
+    width: 100%;
+    height: auto;
+    /* display: flex; */
+  }
+  .skillBox{
+    width: 95%;
+    min-height: 24vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:2vw auto;
+    border: 0.1rem solid #3d444db3;
+    cursor:pointer;
+    padding: 2rem 0px;
+  }
+  .skillBox .box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0px;
+    
+  }
+  .skillBox h2{
+    text-transform: capitalize;
+    padding: 2vw;
+    color: #4493f8;
+  }
+  .skillBox > .box > p{
+    padding: 3vw;
+    margin: auto;
+    border: 0.1rem solid #3d444db3;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: 0.5rem 1.3rem;
+  }
+  #filler{
+    width: 95%;
+    min-height: 24vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:2vw auto;
+    border: 0.1rem solid #3d444db3;
+    cursor:pointer;
+    padding: 2rem 0px;
+  }
+  .projectContainer{
+    width: 95%;
+    height: fit-content;
+    max-height:70vh;
+    overflow-y: auto;
+    border: 0.1rem solid #3d444db3;
+    margin: auto;
+    padding: 1rem 0px;
+  }
+  .projectBox{
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .project{
+    width: 85%;
+    min-height: 25vh;
+    max-height: auto;
+    border-radius: 5px;
+    padding: 3vh 15px;
+    text-align: center;
+    background-color: #0d1117;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin:0.5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+      background-color: #238636;
+    }
+  }
+  #commingSoonProject{
+    width: 85%;
+    min-height: 25vh;
+    color: gold;
+    max-height: auto;
+    border-radius: 5px;
+    padding: 3vh 15px;
+    text-align: center;
+    background-color: #0d1117;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin:0.5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project > .explore{
+    width: fit-content;
+    height: fit-content;
+    padding: 0.3rem 0.8rem;
+    text-align: center;
+    border: 1px solid #f0f6fc;
+    margin-top:1rem ;
+  }
+  .project > .explore > a{
+    text-decoration: none;
+    color: #f0f6fc;
+    cursor: pointer;
+  }
+  .project >:first-child{
+    color: gold;
+    padding: 0.3rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  .tools{
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    padding: 0.3rem;
+    text-transform: uppercase;
+  }
+  .project > .tools > strong{
+    text-transform: capitalize;
+  }
+  .contact{
+    width: 95%;
+    height: auto;
+    border-top: 5rem solid #238636;
+    border-left: 0.1rem solid #3d444db3;
+    border-right: 0.1rem solid #3d444db3;
+    border-bottom: 0.1rem solid #3d444db3;
+    margin: auto;
+    padding: 2rem 0px;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  label{
+    display: block;
+    width: 95%;
+    margin: auto;
+    padding: 0.3rem 0px;
+  }
+  input{
+    display: block;
+    width: 95%;
+    height: 10vw;
+    background-color: #0d1117;
+    border-style:none;
+    border-radius: 0.5rem;
+    margin: auto;
+    color: gold;
+    &:focus{
+      outline:none;
+      border: none;
+    }
+  }
+  input[id="email"]{
+    text-transform: lowercase;
+  }
+  textarea{
+    display: block;
+    height: 15vh;
+    width: 95%;
+    border-style:none;
+    border-radius: 0.5rem;
+    background-color: #0d1117;
+    color: gold;
+    text-transform: lowercase;
+    &:focus{
+      outline: none;
+      border: none;
+    }
+  }
+  .buttonBox{
+    width: 100%;
+    display: flex;
+  }
+  button{
+    width: fit-content;
+    padding: 0.3rem 1rem;
+    background-color: #238636;
+    text-align: center;
+    border: none;
+    margin: auto;
+    &:focus{
+      border: none;
+      outline: none;
+      background-color: #186328;
+    }
+  }
+  .primaryFooter{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0d1117;
+  }
+  .primaryFooter > .iconBox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 0.5rem 0px;
+  }
+  
+  .iconBox a {
+    display: block;
+    margin:auto;
+  }
+  
+  .iconBox a img {
+    width: 8vw;
+    height: 8vw;
+  }
+  
+  .secondaryFooter{
+    width: 100%;
+    height: auto;
+    padding: 0.5rem 0px;
+  }
+  .secondaryFooter p{
+    text-align: center;
+    color: #3d444db3;
+    font-size: smaller;
+  }
+  
+  footer+nav{
+    display:block;
+  }
+}

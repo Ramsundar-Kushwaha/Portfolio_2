@@ -1,0 +1,327 @@
+/*css for tablet phone*/
+@media(min-width:651px) and (max-width:1024px){
+  header{
+    width: 100%;
+    height: auto;
+  }
+  header > nav{
+    width: 100%;
+    height: auto;
+    /* position: fixed; */
+    background-color: #238636;
+    border-bottom: 0.1rem solid gold;
+  } 
+  nav ul{
+    margin: 0px auto;
+    display: flex;
+  }
+  nav ul li{
+    margin: auto;
+    list-style: none;
+    line-height: 11vw;
+    text-transform: capitalize;
+    letter-spacing: 0.1em;
+    padding: 0px 3vw;
+    color: #f0f6fc;
+    &:hover{
+      background-color: #0d1117;
+    }
+  }
+
+  main{
+    width: 100%;
+    height: auto;
+    color: #f0f6fc;
+  }
+  .img{
+    width: 100%;
+    height: 35vw;
+    margin:auto;
+    background-image: url(images/bg2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-bottom: 0.8rem solid #0d1117;
+    display: flex;
+    align-content: center;
+    position: relative;
+  }
+  .textButtonCollection{
+    position: absolute;
+    width: 90vw;
+    height: fit-content;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .titleBox{
+    width: fit-content;
+    height: fit-content;
+    padding: 1.5rem;
+  }
+
+  .titleBox > h1{
+    font-size:clamp(23px, 4vw, 28px);
+    color: gold;
+  }
+
+  .textButtonCollection a{
+    width: fit-content;
+    padding: 0.6rem 0.5rem;
+    margin: 0px 0px 0px 1.5rem;
+    text-decoration: none;
+    background-color: #238636;
+
+  }
+  .textBox{
+    width: auto;
+    height: auto;
+    font-size: clamp(16px, 3vw, 20px);
+    margin: auto;
+    padding: 2rem 0px 2rem 0.5rem;
+    border-right:20vw solid #3d444db3;
+    background:linear-gradient(to right, #0d1117, black)
+  }
+  main > h1{
+    text-align: center;
+    padding: 2vh;
+    letter-spacing: 0.3rem;
+  }
+  .textBox p{
+    font-weight: 300;
+    white-space: line-wrap;
+  }
+  .skillBoxContainer{
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .skillContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+  .skillBox{
+    width:48%;
+    height: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.1rem solid #3d444db3;
+    /* background-color: #0d1117; */
+    cursor:pointer;
+    margin: auto;
+  }
+  .skillBox h2{
+    text-transform: capitalize;
+    padding: 2vw;
+    color: #4493f8;
+  }
+  .skillBox .box{
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0.3rem 0px;
+    
+  }
+  .skillBox > .box > p{
+    margin: auto;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: 0.5rem 1.2rem;
+  }
+  #filler{
+    width:48%;
+    height: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.1rem solid #3d444db3;
+    cursor:pointer;
+    margin: auto;
+  }
+  .projectContainer{
+    width: 95%;
+    height: fit-content;
+    border: 0.1rem solid #3d444db3;
+    margin: auto;
+    text-align: center;
+    overflow-y:auto;
+  }
+  .projectBox{
+    width: 100%;
+    height:fit-content;
+    display: flex;
+    padding: 0.3rem 0px;
+    margin: auto;
+  }
+  .project{
+    width:40vw;
+    height: 36vw;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #0d1117;
+    text-transform: capitalize;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 0.5rem 0.5rem;
+    &:hover{
+      background-color: #238636;
+    }
+  }
+  #commingSoonProject{
+    width: 35vw;
+    color: gold;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px auto;
+    border-radius:5px ;
+    padding: 0px 1.3rem;
+    /* background-color: #4493f8; */
+  }
+  .project > .explore{
+    width: fit-content;
+    height: fit-content;
+    padding: 0.3rem 0.8rem;
+    text-align: center;
+    border: 1px solid #f0f6fc;
+    margin-top:1rem ;
+  }
+  .project > .explore > a{
+    text-decoration: none;
+    color: #f0f6fc;
+    cursor: pointer;
+  }
+  .project >:first-child{
+    color: gold;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .tools{
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    padding: 0.3rem;
+    text-transform: uppercase;
+  }
+  .project > .tools > strong{
+    text-transform: capitalize;
+  }
+  .contact{
+    width: 70%;
+    height: auto;
+    border-top: 0.1rem solid #3d444db3;
+    border-left: 25vw solid #3d444db3;
+    border-right: 0.1rem solid #3d444db3;
+    border-bottom: 0.1rem solid #3d444db3;
+    margin: auto;
+    padding: 2rem 0px;
+  }
+  form{
+    padding: 0px 0px 0px 0.5rem;
+  }
+  label{
+    display: block;
+    margin: auto;
+    padding: 0.3rem 0px;
+  }
+  input{
+    width: 95%;
+    height: 8vw;
+    display: block;
+    background-color: #0d1117;
+    border-style:none;
+    border-radius: 0.5rem;
+    color: gold;
+    &:focus{
+      outline:none;
+      border: none;
+    }
+  }
+  input[id="email"]{
+    text-transform: lowercase;
+  }
+  textarea{
+    width: 95%;
+    height: 15vh;
+    display: block;
+    border-style:none;
+    border-radius: 0.5rem;
+    background-color: #0d1117;
+    color: gold;
+    text-transform: lowercase;
+    &:focus{
+      outline: none;
+      border: none;
+    }
+  }
+  .buttonBox{
+    width: 100%;
+    display: flex;
+  }
+  button{
+    width: fit-content;
+    padding: 0.3rem 1rem;
+    background-color: #238636;
+    text-align: center;
+    border: none;
+    margin: auto;
+    &:focus{
+      border: none;
+      outline: none;
+      background-color: #186328;
+    }
+  }
+  .primaryFooter{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0d1117;
+  }
+  .primaryFooter > .iconBox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 0.5rem 0px;
+  }
+
+  .iconBox a {
+    display: block;
+    margin:auto;
+  }
+
+  .iconBox a img {
+    width: 7vw;
+    height: 7vw;
+  }
+
+  .secondaryFooter{
+    width: 100%;
+    height: auto;
+    padding: 0.5rem 0px;
+  }
+  .secondaryFooter p{
+    text-align: center;
+    color: #3d444db3;
+    font-size: smaller;
+  }
+
+  footer+nav{
+    display:none;
+  }
+}
