@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="style-universal.css">
   <link rel="stylesheet" href="style-mobile.css">
   <link rel="stylesheet" href="style-tab.css">
+  <link rel="stylesheet" href="style-desktop.css">
+  <link rel="stylesheet" href="style-largeScreen.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -31,7 +33,7 @@
     <div class="img">
       <div class="textButtonCollection">
         <div class="titleBox">
-          <h1>Er. Ramsundar</h1>
+          <h1 id="typeWritter"></h1>
           <p>a passionate software engineering student</p>
         </div>
 
@@ -43,9 +45,9 @@
 
     <!--this is skill section-->
     <div class="skillBoxContainer">
-      <br><br>
+      <br><br><br><br>
       <h1 id="skill">Skills</h1>
-      <br>
+      <br><br>
       <div class="skillContainer">
 
         <div class="skillBox" id="bg1">
@@ -97,27 +99,33 @@
 
     <br>
     <br>
+    <br>
+    <br>
 
     <!--this is about section-->
     <h1 id="about">about</h1>
-    <br>
-    <div class="textBox">
-      <p>
-        I'm Ramsundar Kumar Kushwaha, a passionate and ambitious software engineering student originally from Nepal, currently pursuing my B.Tech in Computer Science and Engineering at Quantum University, Roorkee, Uttarakhand, India.
-        <br><br>
-        My journey in technology has been anything but ordinary shaped by resilience, persistence, and a deep hunger to grow. I come from a hard-working middle-class family, where values like dedication and integrity were instilled in me early on. Though the path has been filled with challenges, each obstacle became an opportunity to rise stronger. With the unwavering support of my parents, I completed my Diploma in Computer Science and Engineering, which laid the foundation for my academic and technical growth.
-        <br><br>
-        What truly drives me is the belief that success isn't defined by where you start, but by how far you're willing to go. I’m constantly learning, building, and pushing my boundaries, aiming not just to succeed, but to create meaningful impact through technology.
-      </p>
+    <br><br>
+    <div id="aboutDivision">
+      <div class="textBox">
+        <p>
+          I'm Ramsundar Kumar Kushwaha, a passionate and ambitious software engineering student originally from Nepal, currently pursuing my B.Tech in Computer Science and Engineering at Quantum University, Roorkee, Uttarakhand, India.
+          <br><br>
+          My journey in technology has been anything but ordinary shaped by resilience, persistence, and a deep hunger to grow. I come from a hard-working middle-class family, where values like dedication and integrity were instilled in me early on. Though the path has been filled with challenges, each obstacle became an opportunity to rise stronger. With the unwavering support of my parents, I completed my Diploma in Computer Science and Engineering, which laid the foundation for my academic and technical growth.
+          <br><br>
+          What truly drives me is the belief that success isn't defined by where you start, but by how far you're willing to go. I’m constantly learning, building, and pushing my boundaries, aiming not just to succeed, but to create meaningful impact through technology.
+        </p>
+      </div>
+      <div class="imageContainer"></div>
     </div>
-
+    <br>
+    <br>
     <br>
     <br>
 
 
     <!--this is projects section-->
     <h1 id="projects">projects</h1>
-    <br>
+    <br><br>
     <div class="projectContainer">
       <div class="projectBox">
         <div class="project">
@@ -125,14 +133,14 @@
           <p>console application</p>
           <p class="tools"><strong>tools / language used</strong></p>
           <p>c</p>
-          <div class="explore"><a href="">explore →</a></div>
+          <div class="explore"><a href="" target="_blank">explore →</a></div>
         </div>
         <div class="project">
           <p>Bank management system</p>
           <p>console application</p>
           <p class="tools"><strong>Tools / language used</strong></p>
           <p>c++</p>
-          <div class="explore"><a href="https://github.com/Ramsundar-Kushwaha/C_Plus_Plus-Projects/tree/main">explore →</a></div>
+          <div class="explore"><a href="https://github.com/Ramsundar-Kushwaha/C_Plus_Plus-Projects/tree/main" target="_blank">explore →</a></div>
         </div>
       </div>
       <div class="projectBox">
@@ -140,8 +148,8 @@
           <p>portfolio</p>
           <p>dynamic website</p>
           <p class="tools"><strong>tools / language used</strong></p>
-          <p>html, css, javascript and & emailjs</p>
-          <div class="explore"><a href="https://github.com/Ramsundar-Kushwaha/Portfolio_2">explore →</a></div>
+          <p>html, cSS, javaScript and & emailjs</p>
+          <div class="explore"><a href="https://github.com/Ramsundar-Kushwaha/Portfolio_2" target="_blank">explore →</a></div>
         </div>
         <div id="commingSoonProject">
           <p>comming soon...</p>
@@ -151,10 +159,12 @@
 
     <br>
     <br>
+    <br>
+    <br>
 
     <!--this is contact section-->
     <h1 id="contact">contact</h1>
-    <br>
+    <br><br>
     <div class="contact">
       <form id ="contactForm" method="post" id="contact">
         <label for="name">Name</label>
@@ -175,6 +185,7 @@
           <button type="reset">reset</button>
         </div>
       </form>
+      <div class="formImageContainer"></div>
     </div>
 
   </main>
@@ -186,13 +197,13 @@
 
       <a href="https://www.linkedin.com/in/ramsundar-kushwaha-052b65330/" target="_blank"><img src="icons/linkedin.png" alt="linkedin" title="linkedin"></a>
 
-      <a href="https://leetcode.com/u/Ramsundr_2001/"><img src="icons/code.png" alt="leetcode" target="_blank" title="leetcode"></a>
+      <a href="https://leetcode.com/u/Ramsundr_2001/" target="_blank"><img src="icons/code.png" alt="leetcode" target="_blank" title="leetcode"></a>
 
       <a href="https://www.facebook.com/profile.php?id=61564827992056" target="_blank"><img src="icons/facebook.png" alt="facebook" title="facebook"></a>
     </div>
     <div class="resumePhotoContainer">
-      <a href="">download resume</a>
-      <a href="">see gallery</a>
+      <a href="" target="_blank">download resume</a>
+      <a href="" target="_blank">see gallery</a>
     </div>
     <div class="secondaryFooter">
       <p>&copy; 2025 Ramsundar. All rights reserved. | Portfolio Website</p>

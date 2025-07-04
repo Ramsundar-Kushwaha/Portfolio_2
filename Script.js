@@ -1,5 +1,17 @@
 'use strict'
+//this is for type writting effect
+const name = "< Er. Ramsundar />";
+let i = 0;
+function typeWritter(){
+  if(i < name.length){
+    document.getElementById("typeWritter").innerHTML += name.charAt(i);
+    i++;
+    setTimeout(typeWritter, 100);
+  }
+}
+window.onload = typeWritter;
 
+//this is for smooth scrolling
 function scrollToSection(id) 
 {
   document.getElementById(id).scrollIntoView({ behavior: "smooth" });

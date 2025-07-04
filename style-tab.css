@@ -1,5 +1,5 @@
 /*css for tablet phone*/
-@media(min-width:651px) and (max-width:1024px){
+@media(min-width:651px) and (max-width:912px){
   header{
     width: 100%;
     height: auto;
@@ -80,8 +80,7 @@
     font-size: clamp(16px, 3vw, 20px);
     margin: auto;
     padding: 2rem 0px 2rem 0.5rem;
-    border-right:20vw solid #3d444db3;
-    background:linear-gradient(to right, #0d1117, black)
+    border-right:20vw solid #238636;
   }
   main > h1{
     text-align: center;
@@ -110,9 +109,11 @@
     align-items: center;
     justify-content: center;
     border: 0.1rem solid #3d444db3;
-    /* background-color: #0d1117; */
     cursor:pointer;
     margin: auto;
+    &:hover{
+      background-color: #238636;
+    }
   }
   .skillBox h2{
     text-transform: capitalize;
@@ -224,7 +225,7 @@
     width: 70%;
     height: auto;
     border-top: 0.1rem solid #3d444db3;
-    border-left: 25vw solid #3d444db3;
+    border-left: 25vw solid #238636;
     border-right: 0.1rem solid #3d444db3;
     border-bottom: 0.1rem solid #3d444db3;
     margin: auto;

@@ -17,6 +17,7 @@ body{
   /* background-color: aqua; */
 }
 .resumePhotoContainer > a{
+  font-size: 0.8rem;
   color: aquamarine;
   margin: auto;
   display: block;

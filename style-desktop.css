@@ -1,19 +1,18 @@
-/*css for mobile*/
-@media(min-width:300px) and (max-width:650px){
-
+/*css for tablet phone*/
+@media(min-width:913px) and (max-width:1250px){
+  /* body{
+    background-color: white;
+  } */
   header{
-    width: 100%;
+    width: 90%;
     height: auto;
+    margin: auto;
   }
-  nav{
+  header > nav{
     width: 100%;
     height: auto;
     background-color: #238636;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    display: none;
-    border-top: 0.1rem solid gold;
+    border-bottom: 0.1rem solid gold;
   } 
   nav ul{
     margin: 0px auto;
@@ -22,7 +21,7 @@
   nav ul li{
     margin: auto;
     list-style: none;
-    line-height: 11vw;
+    line-height: 5vw;
     text-transform: capitalize;
     letter-spacing: 0.1em;
     padding: 0px 3vw;
@@ -31,21 +30,22 @@
       background-color: #0d1117;
     }
   }
-  
+
   main{
-    width: 100%;
+    width: 90%;
     height: auto;
     color: #f0f6fc;
+    margin: auto;
   }
   .img{
     width: 100%;
-    height: 30vh;
+    height: 25vw;
     margin:auto;
     background-image: url(images/bg2.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    border-bottom: 0.5rem solid #238636;
+    background-size:cover;
+    border-bottom: 0.5rem solid gold;
     display: flex;
     align-content: center;
     position: relative;
@@ -62,30 +62,46 @@
   .titleBox{
     width: fit-content;
     height: fit-content;
-    padding: 1rem;
+    padding: 1.5rem;
   }
-  
+
   .titleBox > h1{
-    font-size: 25px;
+    font-size:clamp(23px, 4vw, 28px);
     color: gold;
   }
-  
+
   .textButtonCollection a{
     width: fit-content;
-    padding: 1vw;
-    margin: 0px 14px;
+    padding: 0.6rem 0.5rem;
+    margin: 0px 0px 0px 1.5rem;
     text-decoration: none;
     background-color: #238636;
     cursor: pointer;
-  
+
+  }
+  #aboutDivision{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: auto;
   }
   .textBox{
-    width: 95%;
-    height: 50vh;
-    background:linear-gradient(to bottom, #0d1117, rgb(0, 0, 0));
-    margin: auto;
-    padding: 2rem 0px;
-    overflow-y: auto;
+    width: 60%;
+    height: auto;
+    font-size: clamp(16px, 3vw, 20px);
+    padding: 2rem 0px 2rem 0.5rem;
+  }
+  .imageContainer{
+    width: 40%;
+    height: auto;
+    opacity: 0.8;
+    background-image: url(images/ramsundar.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &:hover{
+      opacity: 1;
+    }
   }
   main > h1{
     text-align: center;
@@ -93,8 +109,8 @@
     letter-spacing: 0.3rem;
   }
   .textBox p{
-    text-align: center;
     font-weight: 300;
+    white-space: line-wrap;
   }
   .skillBoxContainer{
     width: 100%;
@@ -102,115 +118,113 @@
     text-align: center;
   }
   .skillContainer{
-    width: 100%;
+    width: 90%;
     height: auto;
-    /* display: flex; */
+    display: flex;
+    margin: auto;
   }
   .skillBox{
-    width: 95%;
-    min-height: fit-content;
+    width:48%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin:2vw auto;
     border: 0.1rem solid #3d444db3;
     cursor:pointer;
-    padding: 1rem 0px;
+    margin: auto;
     &:hover{
       background-color: #238636;
     }
-  }
-  .skillBox .box{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 0.5rem 0px;
-    
   }
   .skillBox h2{
     text-transform: capitalize;
     padding: 2vw;
     color: #4493f8;
   }
+  .skillBox .box{
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0.3rem 0px;
+    
+  }
   .skillBox > .box > p{
-    padding: 3vw;
     margin: auto;
-    border: 0.1rem solid #3d444db3;
     font-weight: 400;
     text-transform: capitalize;
-    padding: 0.5rem 1.3rem;
+    padding: 0.5rem 1.2rem;
   }
   #filler{
-    width: 95%;
-    min-height: 15vh;
-    display: flex;
+    width:48%;
+    height: 40vw;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin:2vw auto;
     border: 0.1rem solid #3d444db3;
     cursor:pointer;
-    padding: 2rem 0px;
+    margin: auto;
   }
   .projectContainer{
-    width: 95%;
+    width: 100%;
     height: fit-content;
-    max-height:70vh;
-    overflow-y: auto;
     border: 0.1rem solid #3d444db3;
     margin: auto;
-    padding: 1rem 0px;
+    text-align: center;
+    overflow-y:auto;
   }
   .projectBox{
     width: 100%;
-    height:auto;
+    height:fit-content;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 0.3rem 0px;
+    margin: auto;
   }
   .project{
-    width: 95%;
-    height: auto;
+    width:40vw;
+    height: 20vw;
     border-radius: 5px;
-    padding: 1rem 0px;
     text-align: center;
     background-color: #0d1117;
     text-transform: capitalize;
     cursor: pointer;
-    margin:0.5rem auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: auto;
+    padding: 0.5rem 0.5rem;
     &:hover{
       background-color: #238636;
     }
   }
   #commingSoonProject{
-    width: 95%;
-    min-height: 15vh;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: gold;
-    max-height: auto;
+    width:40vw;
+    height: 20vw;
     border-radius: 5px;
-    padding: 1rem 0px;
     text-align: center;
-    background-color: #0d1117;
     text-transform: capitalize;
     cursor: pointer;
-    margin:0.5rem auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: auto;
+    padding: 0.5rem 0.5rem;
+    /* background-color: #4493f8; */
+  }
+  #commingSoonProject > :first-child{
+    color: gold;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+    font-weight: 700;
   }
   .project > .explore{
     width: fit-content;
     height: fit-content;
-    padding: 0.3rem 0.8rem;
+    padding: 0.8rem 2rem;
     text-align: center;
     border: 1px solid #f0f6fc;
     margin-top:1rem ;
@@ -223,7 +237,7 @@
   .project >:first-child{
     color: gold;
     padding: 0.3rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 700;
   }
   .tools{
@@ -237,64 +251,62 @@
     text-transform: capitalize;
   }
   .contact{
-    width: 95%;
+    width: 77%;
     height: auto;
-    border-top: 8rem solid #238636;
-    border-left: 0.1rem solid #3d444db3;
+    border-top: 0.1rem solid #3d444db3;
+    border-left: 20vw solid #238636;
     border-right: 0.1rem solid #3d444db3;
     border-bottom: 0.1rem solid #3d444db3;
     margin: auto;
     padding: 2rem 0px;
+    display: flex;
   }
   form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 45%;
+    padding: 0px 0px 0px 0.5rem;
   }
-  label{
+  form > label{
     display: block;
-    width: 95%;
     margin: auto;
     padding: 0.3rem 0px;
   }
-  input{
+  form > input{
+    width: 100%;
+    height: 3vw;
     display: block;
-    width: 95%;
-    height: 10vw;
     background-color: #0d1117;
     border-style:none;
     border-radius: 0.5rem;
-    margin: auto;
-    color: gold;
+    color:#4ce069;
     &:focus{
       outline:none;
       border: none;
     }
   }
-  input[id="email"]{
+  form > input[id="email"]{
     text-transform: lowercase;
   }
-  textarea{
-    display: block;
+  form > textarea{
+    width: 100%;
     height: 15vh;
-    width: 95%;
+    display: block;
     border-style:none;
     border-radius: 0.5rem;
     background-color: #0d1117;
-    color: gold;
+    color: #4ce069;
     text-transform: lowercase;
     &:focus{
       outline: none;
       border: none;
     }
   }
-  .buttonBox{
+  form .buttonBox{
     width: 100%;
     display: flex;
   }
-  button{
+  form > .buttonBox > button{
     width: fit-content;
-    padding: 0.3rem 1rem;
+    padding: 0.8rem 2rem;
     background-color: #238636;
     text-align: center;
     border: none;
@@ -305,31 +317,41 @@
       background-color: #186328;
     }
   }
+  .formImageContainer{
+    width: 55%;
+    height: auto;
+
+    background-image:url(icons/tree.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .primaryFooter{
-    width: 100%;
+    width: 90%;
     height: 30vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #0d1117;
+    margin: auto;
   }
   .primaryFooter > .iconBox {
-    width: 100%;
+    width: 40%;
     height: auto;
     display: flex;
     padding: 0.5rem 0px;
   }
-  
+
   .iconBox a {
     display: block;
     margin:auto;
   }
-  
+
   .iconBox a img {
-    width: 8vw;
-    height: 8vw;
+    width: 3vw;
+    height: 3vw;
   }
-  
+
   .secondaryFooter{
     width: 100%;
     height: auto;
@@ -340,8 +362,8 @@
     color: #3d444db3;
     font-size: smaller;
   }
-  
+
   footer+nav{
-    display:block;
+    display:none;
   }
 }
