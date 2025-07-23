@@ -86,21 +86,20 @@
     margin: auto;
   }
   .textBox{
-    width: 60%;
+    width: 45%;
     height: auto;
     font-size: clamp(16px, 3vw, 20px);
     padding: 2rem 0px 2rem 0.5rem;
   }
   .imageContainer{
-    width: 40%;
+    width: 55%;
     height: auto;
-    opacity: 0.8;
     background-image: url(images/ramsundar.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     &:hover{
-      opacity: 1;
+      opacity: 0.8;
     }
   }
   main > h1{
@@ -140,7 +139,7 @@
   .skillBox h2{
     text-transform: capitalize;
     padding: 2vw;
-    color: #4493f8;
+    color: gold;
   }
   .skillBox .box{
     width: auto;
@@ -163,7 +162,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 0.1rem solid #3d444db3;
+    /* border: 0.1rem solid #3d444db3; */
     cursor:pointer;
     margin: auto;
   }
